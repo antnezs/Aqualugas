@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaRium - Melhor Vista do Mar</title>
+    <link rel="stylesheet" href="ingressos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aquarium</h1>
+            <h2>Seu melhor mergulho estará aqui.</h2>
+            <p class="tagline">Experiências no Aquário</p>
+            <p>Adquira seu ingresso aqui:</p>
+        </header>
+        <div class="content">
+            <div class="main-content">
+                <h3>A melhor vista do <span class="highlight">mar</span></h3>
+                <p></p>
+                
+                <div class="ticket-options">
+                    <h3>Ingresso AquaRio</h3>
+                    
+                    <div class="ticket-option" onclick="selectTicket(this)">
+                        <div class="ticket-title">Ingresso Individual</div>
+                        <div class="ticket-price">R$ 80,00</div>
+                        <div class="ticket-description">Acesso a todas as áreas do aquário</div>
+                    </div>
+                    
+                    <div class="ticket-option" onclick="selectTicket(this)">
+                        <div class="ticket-title">Ingresso Família (4 pessoas)</div>
+                        <div class="ticket-price">R$ 240,00</div>
+                        <div class="ticket-description">Economize com o pacote família</div>
+                    </div>
+                    
+                    <div class="ticket-option" onclick="selectTicket(this)">
+                        <div class="ticket-title">Experiência Premium</div>
+                        <div class="ticket-price">R$ 150,00</div>
+                        <div class="ticket-description">Inclui tour guiado e alimentação dos peixes</div>
+                    </div>
+                </div>
+                
+                <div class="date-selector">
+                    <label for="visit-date">Selecione a data da visita:</label>
+                    <input type="date" id="visit-date">
+                </div>
+                
+                <button class="purchase-btn" onclick="purchaseTickets()">Comprar Ingressos</button>
+            </div>
+            
+            <div class="sidebar">
+                <h3>DREAMLAND</h3>
+                <p>Viva a experiência completa no maior aquário da América do Sul!</p>
+                
+                <div class="highlight-box">
+                    <p>9º novembro de 2014</p>
+                    <p>Experiência Completa • GEX (Globo Experienced)</p>
+                </div>
+                
+                <h3>Megamos</h3>
+                <p>Conheça nossos pacotes especiais para grupos e escolas.</p>
+            </div>
+        </div>
+        
+        <div class="experience-section">
+            <div class="experience-title">VIVA A EXPERIÊNCIA COMPLETA</div>
+            <div class="experience-subtitle">Descubra o mundo marinho como nunca antes</div>
+            
+            <div class="partners">
+                <div class="partner-logo">DREAMLAND</div>
+                <div class="partner-logo">Megamos</div>
+                <div class="partner-logo">GEX</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>AquaRio - O melhor vista do mar | Contato: (21) 9999-9999</p>
+        </footer>
+    </div>
+
+    <script src="ingressos.js"></script>
+</body>
+</html>
