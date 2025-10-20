@@ -42,26 +42,7 @@ header {
     opacity: 0.9;
 }
 
-nav {
-    background-color: #004455;
-}
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item {
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.nav-item:hover {
-    background-color: #002233;
-}
 
 .main-content {
     display: flex;
