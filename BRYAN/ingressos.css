@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f0f8ff;
+    background-color: rgb(29, 66, 138) !important;
     color: #003366;
     font-family: sans-serif;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar.bg-black {
-    background-color: #0096ff82 !important;
+    background-color: #ffffff !important;
 }
 
 .navbar-nav .nav-link {
@@ -27,7 +27,6 @@ body {
 .navbar-nav .nav-link:hover {
     color: #a3d8f4 !important;
 }
-
 
 
 .container {
@@ -48,11 +47,20 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+.main-content h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
 
 .ticket-section h3 {
     text-align: center;
     margin: 20px 0;
-    color: #005a87;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .ticket-option {
@@ -122,15 +130,6 @@ body {
     margin: 15px 0;
     text-align: center;
 }
-
-.experience {
-    background: linear-gradient(to right, #0077be, #0099cc);
-    color: white;
-    padding: 30px;
-    text-align: center;
-    margin: 30px 0;
-}
-
 .exp-title {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -173,7 +172,7 @@ body {
 }
 
 .ticket-price {
-    color: #28a745;
+  
     font-weight: bold;
     font-size: 1.3em;
     margin-bottom: 8px;
