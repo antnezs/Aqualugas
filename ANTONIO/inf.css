@@ -1,24 +1,25 @@
 html {
     scroll-behavior: smooth;
+    
 }
 .q1 {
-    background-color: #14197ef0;
-    height: 450px;
-    width: 850px;
-    padding: 25px;
-    border-radius: 15px; 
-    border-color: black;
-    border-width: 3px;    
-    border-style:groove; 
-     
+  background-color: #14197ef0;
+  height: 450px;
+  width: 850px;
+  padding: 25px;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 3px;
+  border-style: groove;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
+  position: relative; 
 }
-.minha-linha {
-    border: none;
-    height: 2px;
-    background-color: #333; 
-    margin: 2px 0;
-    width: 1000px; 
-  }
+.prin{
+  background-color: rgb(31, 197, 19);
+}
 
 
 -------------------------------------
@@ -65,34 +66,81 @@ align-items: center;
 justify-content: center;
 }
 
+/* Estilização global para o container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%); /* Gradiente suave com tons de azul */
+  min-height: 100vh; /* Garante que o container ocupe a altura da tela */
+}
+
+/* Estilização dos cards */
 .card {
-    max-width: 600px;
-    border: 1px solid#000000f0;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    margin: 10px;
-    display: inline-block;
-    background: #14197ef0;
-  }
+  max-width: 500px; /* Reduzido para um layout mais compacto e moderno */
+  max-height: 500px;
+  min-width: none;
+  min-height: auto;
+  margin: 20px; /* Espaçamento maior entre os cards */
+  padding: 20px;
+  background: linear-gradient(145deg, #ffffff, #e6f0fa); /* Fundo claro com toque azulado */
+  border: none; /* Removido a borda preta para um visual mais limpo */
+  border-radius: 15px; /* Bordas mais arredondadas */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada e suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Evita que o conteúdo vaze fora do card */
+}
 
-  .card img {
-    width: 100%;
-    border-radius: 8px;
-  }
+/* Efeito de hover nos cards */
+.card:hover {
+  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
 
-  .btn {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-  }
+/* Estilização do conteúdo do card */
+.card-content {
+  padding: 15px;
+}
 
-  .btn:hover {
-    background: #0056b3;
-  }
+/* Títulos dos cards */
+.card-content h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
+  font-size: 1.5rem; /* Tamanho maior para destaque */
+  color: #0d47a1; /* Azul escuro para combinar com o tema aquático */
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Letras maiúsculas para maior impacto */
+  letter-spacing: 1px; /* Espaçamento para sofisticação */
+}
+
+/* Descrição dos cards */
+.card-content p {
+  font-family: 'Roboto', sans-serif; /* Fonte legível e moderna */
+  font-size: 1rem;
+  color: #333; /* Cor neutra para boa legibilidade */
+  line-height: 1.6; /* Espaçamento para facilitar a leitura */
+  text-align: left; /* Alinhamento à esquerda para melhor organização */
+}
+
+
+
+
+/* Estilização adicional para links da navbar (se necessário) */
+.nav-link {
+  font-family: 'Segoe UI', sans-serif;
+  color: #000000; /* Mesma cor azul escura para consistência */
+  text-decoration: none;
+  padding: 10px 15px;
+ 
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background: #0d47a1; /* Fundo azul escuro no hover */
+  border-radius: 5px;
+}
