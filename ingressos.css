@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 66, 138) !important;
+    color: #003366;
+    font-family: sans-serif;
+}
+
+.navbar {
+    min-height: 90px !important;
+    padding: 10px 20px;
+    background-color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #1a3c6d !important;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a3d8f4 !important;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.main-content { flex: 2; }
+.sidebar { 
+    flex: 1;
+    background: #e6f2ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content h3,
+.ticket-section h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ticket-option {
+    background-color: #e6f7ff;
+    border: 2px solid #0077be;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ticket-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ticket-option.selected {
+    background: #cceeff;
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.ticket-title {
+    font-weight: bold;
+    color: #005a87;
+}
+
+.ticket-price {
+    font-size: 1.3rem;
+    color: #0077be;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.ticket-desc {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.highlight {
+    background: #ffcc00;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.quantidade-fixa {
+    background-color: #f8f9fa !important;
+}
+
+.quantidade-fixa .form-select {
+    background-color: #e9ecef !important;
+    cursor: not-allowed !important;
+}
+
+.quantidade-fixa .form-label {
+    color: #6c757d !important;
+}

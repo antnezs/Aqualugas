@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqualugas - Ingressos</title>
+    <link rel="stylesheet" href="ingressos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/aquarium-logo.png" class="logo" width="230" height="80" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-5">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../GIOVANE/index.html">Atrações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../BRYAN/ingressos.html">Ingressos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../ANTONIO/index.html">Sobre nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <div class="main-content">
+            <h3>A melhor vista do mar</h3>
+            
+            <div class="ticket-section">
+                <h3>Ingressos visita no aquário</h3>
+                
+                <div class="ticket-option" onclick="selectTicket(this, 'individual')">
+                    <div class="ticket-title">Ingresso Individual</div>
+                    <div class="ticket-price">R$ 80,00</div>
+                    <div class="ticket-desc">Acesso a todas as áreas do aquário</div>
+                </div>
+                
+                <div class="ticket-option" onclick="selectTicket(this, 'familia')">
+                    <div class="ticket-title">Ingresso Família (4 pessoas)</div>
+                    <div class="ticket-price">R$ 240,00</div>
+                    <div class="ticket-desc">Economize com o pacote família</div>
+                </div>
+                
+                <div class="ticket-option" onclick="selectTicket(this, 'premium')">
+                    <div class="ticket-title">Experiência Premium</div>
+                    <div class="ticket-price">R$ 150,00</div>
+                    <div class="ticket-desc">Inclui tour guiado e acesso a áreas exclusivas.</div>
+                </div>
+
+                <div class="ticket-option" onclick="selectTicket(this, 'premium-familia')">
+                    <div class="ticket-title">Experiência Premium Família (4 pessoas)</div>
+                    <div class="ticket-price">R$ 450,00</div>
+                    <div class="ticket-desc">Inclui tour guiado, acesso a áreas exclusivas, e economia com o pacote família.</div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>DREAMLAND</h3>
+            <p>Viva a experiência completa no maior aquário da América do Sul!</p>
+            <div class="highlight">
+                <p>9º novembro de 2025</p>
+                <p>Experiência Completa • GEX</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalhes do Ingresso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-ticket-info" class="mb-4">
+                        <h4 id="modal-ticket-title"></h4>
+                        <p class="text-success fw-bold fs-5" id="modal-ticket-price"></p>
+                        <p id="modal-ticket-desc" class="text-muted"></p>
+                    </div>
+                    
+                    <div class="container-fluid">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="visit-date" class="form-label">Data da Visita:</label>
+                                <input type="date" id="visit-date" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ticket-quantity" class="form-label">Quantidade:</label>
+                                <select id="ticket-quantity" class="form-select">
+                                    <option value="1">1 ingresso</option>
+                                    <option value="2">2 ingressos</option>
+                                    <option value="3">3 ingressos</option>
+                                    <option value="4">4 ingressos</option>
+                                    <option value="5">5 ingressos</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-info">
+                                    <small>
+                                        <strong>Informações importantes:</strong><br>
+                                        - Horário de funcionamento: 9h às 18h<br>
+                                        - Crianças até 5 anos não pagam<br>
+                                        - Estudantes e idosos têm 50% de desconto (documentação necessária)
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Aqualugas</h6>
+                        <p>Compra de ingressos rápida, segura e conveniente para o aquário.</p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                        <p><a href="#!" class="text-reset">Angular</a></p>
+                        <p><a href="#!" class="text-reset">React</a></p>
+                        <p><a href="#!" class="text-reset">Vue</a></p>
+                        <p><a href="#!" class="text-reset">Laravel</a></p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                        <p><a href="#!" class="text-reset">Pricing</a></p>
+                        <p><a href="#!" class="text-reset">Settings</a></p>
+                        <p><a href="#!" class="text-reset">Orders</a></p>
+                        <p><a href="#!" class="text-reset">Help</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Curitiba PR</p>
+                        <p><i class="fas fa-envelope me-3"></i>equipe.aqualugas@gmail.com</p>
+                        <p><i class="fas fa-print me-3"></i> + 55 41 1234-5678</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright: <a class="text-reset fw-bold" href="https://mdbootstrap.com/">admlugas.com</a>
+        </div>
+    </footer>
+    
+    <script src="ingressos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
