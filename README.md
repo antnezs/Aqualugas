@@ -35,5 +35,3 @@ O Aqualugas é um aplicativo que permite aos usuários explorar nosso aquário v
 ### Compra de Ingressos
 ![Compra de Ingressos](prints/ingressos.png)
 
-## Protótipo no Figma
-[Link para o protótipo no Figma](./figma-prototype.png)
