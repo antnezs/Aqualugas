@@ -1,32 +1,39 @@
-<h1>Aqualugas - Aquário Marinho 🐠 <h1>
-<br>
-<h2>O Aqualugas é um aquário marinho, desenvolvido como projeto educacional. O site apresenta diversas espécies marinhas com informações detalhadas, sistema de ingressos e informações institucionais.</h2>
-<br>
-<h1>👥 Equipe de Desenvolvimento <h1>
-<h2>Giovane - Página de Atrações<h2>
-<h2>Bryan - Página de Ingressos<h2>
-<h2>Antonio - Página Sobre Nós<h2>
-<h2>Gabriel - Pagína Principal</h2>
-<br>
-<h1>🎯 Funcionalidades Principais<h1>
-<br:
-<h1>🏠 Página Inicial<h1>
-<h2>Apresentação do aquário<h2>
-<br>
-<h2>Galeria de espécies marinhas<h2>
-<br>
-<h1>🎪 Atrações<h1>
-<br>
-<h2>Catálogo completo de animais<h2>
-<h2>Informações detalhadas sobre cada espécie<h2>
-<h2>Fotos e descrições educativas<h2>
-<br>
-<h1>🎫 Ingressos<h1>
-<br>
-<h2>Sistema de compra de ingressos<h2>
-<h2>Informações sobre preços e horários<h2>
-<h1>📞 Contato <h1>
-<h2>Email: equipe.aqualugas@gmail.com<h2>
-<h2>Telefone: +55 41 1234-5678<h2>
-<h2>Endereço: Curitiba - PR, Brasil<h2>
-# Aquarium
+# Aqualugas
+
+## Integrantes do Grupo
+- Giovane
+- Gabriel
+- Bryan N.
+- Antônio
+
+## API Utilizada
+[JSON Server](https://github.com/typicode/json-server)
+
+## Sobre o Projeto
+O Aqualugas é um aplicativo que permite aos usuários explorar nosso aquário virtual, onde podem:
+- Conhecer as diferentes espécies marinhas presentes em nosso aquário
+- Saber mais sobre nossa empresa e missão
+- Comprar ingressos para visitar o aquário diretamente pelo site
+
+## Funcionalidades
+- Catálogo de espécies marinhas
+- Informações sobre a empresa
+- Sistema de compra de ingressos online
+- Interface intuitiva e responsiva
+
+## Screenshots do Aplicativo
+
+### Tela Inicial
+![Tela Inicial](./screenshots/home-screen.png)
+
+### Catálogo de Espécies
+![Catálogo de Espécies](./screenshots/species-catalog.png)
+
+### Sobre a Empresa
+![Sobre a Empresa](./screenshots/about-us.png)
+
+### Compra de Ingressos
+![Compra de Ingressos](./screenshots/ticket-purchase.png)
+
+## Protótipo no Figma
+[Link para o protótipo no Figma](./figma-prototype.png)
