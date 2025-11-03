@@ -7,7 +7,7 @@
 - Antônio
 
 ## API Utilizada
-[JSON Server](https://github.com/typicode/json-server)
+[JSON Server]
 
 ## Sobre o Projeto
 O Aqualugas é um aplicativo que permite aos usuários explorar nosso aquário virtual, onde podem:
@@ -24,16 +24,16 @@ O Aqualugas é um aplicativo que permite aos usuários explorar nosso aquário v
 ## Screenshots do Aplicativo
 
 ### Tela Inicial
-![Tela Inicial](./screenshots/home-screen.png)
+![Tela Inicial](prints/home.png)
 
 ### Catálogo de Espécies
-![Catálogo de Espécies](./screenshots/species-catalog.png)
+![Catálogo de Espécies](prints/atrações.png)
 
 ### Sobre a Empresa
-![Sobre a Empresa](./screenshots/about-us.png)
+![Sobre a Empresa](prints/sobre.png)
 
 ### Compra de Ingressos
-![Compra de Ingressos](./screenshots/ticket-purchase.png)
+![Compra de Ingressos](prints/ingressos.png)
 
 ## Protótipo no Figma
 [Link para o protótipo no Figma](./figma-prototype.png)
