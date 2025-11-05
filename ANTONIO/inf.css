@@ -1,28 +1,7 @@
 html {
     scroll-behavior: smooth;
-    
-}
-.q1 {
-  background-color: #14197ef0;
-  height: 450px;
-  width: 850px;
-  padding: 25px;
-  border-radius: 15px;
-  border-color: black;
-  border-width: 3px;
-  border-style: groove;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  margin: 0 auto; 
-  position: relative; 
-}
-.prin{
-  background-color: rgb(31, 197, 19);
 }
 
-
--------------------------------------
 .logo {
     margin-right: 20px;
 }
@@ -32,12 +11,10 @@ html {
     list-style: none;
     margin: 0px;
     padding: 0;
-   
 }
 
 .nav-item {
     margin: 0 5px;
-   
 }
 
 .nav-link {
@@ -45,30 +22,18 @@ html {
     align-items: center;
     text-decoration: none;
     color: #000;
-    background-color: #058db6; /* Default background color, adjust per item */
+    background-color: #058db6;
     padding: 10px 20px;
     border-radius: 18px;
     font-size: 14px;
-    
 }
 
 .nav-link:hover {
     background-color: #d36b04;
     transition:0.5s;
 }
- 
-.footer {
-    background-color: #000000;
- height: 100px;
- color: whitesmoke;
- display: flex;
-align-items: center; 
-justify-content: center;
-}
-
-/* Estilização global para o container */
 .container {
-  max-width: 1200px;
+  max-width: 100px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -96,54 +61,13 @@ justify-content: center;
   justify-content: space-between;
   overflow: hidden; /* Evita que o conteúdo vaze fora do card */
 }
-
 /* Efeito de hover nos cards */
 .card:hover {
   transform: translateY(-10px); /* Eleva o card ao passar o mouse */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
 }
 
-/* Estilização do conteúdo do card */
-.card-content {
-  padding: 15px;
-}
 
-/* Títulos dos cards */
-.card-content h3 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
-  font-size: 1.5rem; /* Tamanho maior para destaque */
-  color: #0d47a1; /* Azul escuro para combinar com o tema aquático */
-  margin-bottom: 10px;
-  text-transform: uppercase; /* Letras maiúsculas para maior impacto */
-  letter-spacing: 1px; /* Espaçamento para sofisticação */
-}
-
-/* Descrição dos cards */
-.card-content p {
-  font-family: 'Roboto', sans-serif; /* Fonte legível e moderna */
-  font-size: 1rem;
-  color: #333; /* Cor neutra para boa legibilidade */
-  line-height: 1.6; /* Espaçamento para facilitar a leitura */
-  text-align: left; /* Alinhamento à esquerda para melhor organização */
-}
-
-
-
-
-/* Estilização adicional para links da navbar (se necessário) */
-.nav-link {
-  font-family: 'Segoe UI', sans-serif;
-  color: #000000; /* Mesma cor azul escura para consistência */
-  text-decoration: none;
-  padding: 10px 15px;
- 
-}
-
-.nav-link:hover {
-  color: #ffffff;
-  background: #0d47a1; /* Fundo azul escuro no hover */
-  border-radius: 5px;
-}
 /* Seção Hero */
 .hero {
     background: linear-gradient(135deg, #059669 0%, #047857 50%, #0f766e 100%);
@@ -187,7 +111,7 @@ justify-content: center;
 }
 
 .text-green-200 {
-    color: #bbf7d0;
+    color: #0dbd4b;
 }
 
 .border-green-300\/30 {
@@ -218,63 +142,11 @@ justify-content: center;
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-green-300 {
-    --tw-gradient-from: #86efac;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(134, 239, 172, 0));
-}
 
-.to-emerald-200 {
-    --tw-gradient-to: #a7f3d0;
-}
 
-.bg-clip-text {
-    -webkit-background-clip: text;
-    background-clip: text;
-}
 
-.text-transparent {
-    color: transparent;
-}
 
-.text-xl {
-    font-size: 1.25rem;
-}
-
-.text-green-100 {
-    color: #dcfce7;
-}
-
-.leading-relaxed {
-    line-height: 1.625;
-}
-
-/* Responsividade */
-@media (min-width: 1024px) {
-    .lg\:text-5xl {
-        font-size: 3rem;
-    }
-    
-    .lg\:text-4xl {
-        font-size: 2.25rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .text-4xl, .text-5xl {
-        font-size: 2rem;
-    }
-}
-.grid {
-    display: grid;
-}
-
-.lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.gap-8 {
-    gap: 2rem;
-}
+/* Grid e Cards */
 
 .card {
     border-radius: 0.5rem;
@@ -284,26 +156,14 @@ justify-content: center;
     backdrop-filter: blur(4px);
 }
 
-.group:hover .card {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
 
 .h-2 {
     height: 0.5rem;
 }
 
-.bg-gradient-to-r {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
 
-.from-green-500 {
-    --tw-gradient-from: #10b981;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(16, 185, 129, 0));
-}
 
-.to-emerald-500 {
-    --tw-gradient-to: #10b981;
-}
+
 
 .from-blue-500 {
     --tw-gradient-from: #3b82f6;
@@ -336,9 +196,7 @@ justify-content: center;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
 }
 
-.pb-4 {
-    padding-bottom: 1rem;
-}
+
 
 .flex {
     display: flex;
@@ -378,27 +236,10 @@ justify-content: center;
     transition-duration: 300ms;
 }
 
-.text-white {
-    color: white;
-}
 
-.bg-green-100 {
-    background-color: #dcfce7;
-}
 
-.text-green-700 {
-    color: #15803d;
-}
 
-.border-green-200 {
-    border-color: #bbf7d0;
-}
 
-.card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 1rem;
-}
 
 .group:hover .group-hover\:text-green-700 {
     color: #15803d;
@@ -415,78 +256,12 @@ justify-content: center;
     padding-top: 0;
 }
 
-.text-xl {
-    font-size: 1.25rem;
-}
-
 .text-gray-900 {
     color: #111827;
 }
 
 .text-gray-700 {
     color: #374151;
-}
-
-.leading-relaxed {
-    line-height: 1.625;
-}
-
-/* Classes do badge que podem ser necessárias */
-.badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.border {
-    border-width: 1px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* Seção Processos de Manutenção */
-.maintenance {
-    padding: 5rem 0;
-    background-color: white;
-}
-
-.border-green-100 {
-    border-color: #dcfce7;
-}
-
-.p-6 {
-    padding: 1.5rem;
-}
-
-.items-start {
-    align-items: flex-start;
-}
-
-.space-x-4 > * + * {
-    margin-left: 1rem;
-}
-
-.flex-shrink-0 {
-    flex-shrink: 0;
-}
-
-.flex-1 {
-    flex: 1 1 0%;
-}
-
-.text-lg {
-    font-size: 1.125rem;
-}
-
-.mb-3 {
-    margin-bottom: 0.75rem;
 }
 
 /* Seção Programas de Conservação */
@@ -609,7 +384,18 @@ justify-content: center;
     --tw-gradient-to: #e5e7eb;
 }
 
-/* Classes já definidas anteriormente que são reutilizadas */
+/* Responsividade */
+@media (min-width: 1024px) {
+    .lg\:text-center { text-align: center; }
+    .lg\:text-4xl { font-size: 2.25rem; }
+    .lg\:text-5xl { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr; }
+    .text-3xl, .text-4xl { font-size: 1.5rem; }
+    .text-4xl, .text-5xl { font-size: 2rem; }
+}
 .max-w-6xl { max-width: 72rem; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
@@ -644,14 +430,3 @@ justify-content: center;
 .text-xl { font-size: 1.25rem; }
 .leading-relaxed { line-height: 1.625; }
 .badge { display: inline-flex; align-items: center; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; }
-
-/* Responsividade */
-@media (min-width: 1024px) {
-    .lg\:text-center { text-align: center; }
-    .lg\:text-4xl { font-size: 2.25rem; }
-}
-
-@media (max-width: 768px) {
-    .grid { grid-template-columns: 1fr; }
-    .text-3xl, .text-4xl { font-size: 1.5rem; }
-}
