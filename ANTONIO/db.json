@@ -3,12 +3,24 @@
     {
       "id": 1,
       "titulo": "sobre nós",
-      "descrição": "No Aquarium, criamos ambientes ecologicamente diversificados que replicam biomas globais, fomentando interações naturais entre espécies marinhas. Por exemplo, nosso tanque principal abriga mais de 500 espécies, incluindo tubarões, tartarugas marinhas e peixes tropicais, em um ecossistema autossustentável impulsionado por filtragem biológica avançada e ciclos de nutrientes reciclados. Essa abordagem minimiza intervenções externas, garantindo que os habitats permaneçam equilibrados e resilientes. Nossos especialistas em manutenção monitoram diariamente parâmetros como pH, salinidade e biodiversidade, utilizando tecnologias de ponta para preservar a integridade ecológica. Adquira seu ingresso para vivenciar essa inovação e contribuir para a conservação marinha."
+      "descrição": "No Aquarium, criamos ambientes ecologicamente dor filtragem biológica avançada e ciclos de nutrientes reciclados. Essa abordagem minimiza intervenções externas, garantindo que os habitats permaneçam equilibrados e resilientes. Nossos especialistas em manutenção monitoram diariamente parâmetros como pH, salinidade e biodiversidade, utilizando tecnologias de ponta para preservar a integridade ecológica. Adquira seu ingresso para vivenciar essa inovação e contribuir para a conservação marinha."
     },
     {
       "id": 2,
       "titulo": "Sobre o site",
-      "descrição": " Venda de Ingressos Online:Permitir que os visitantes comprem ingressos de forma rápida, segura e conveniente, com opções para diferentes tipos de entrada (individual, familiar, grupos, eventos especiais) e datas, evitando filas presenciais.Informação e Engajamento:Fornecer informações detalhadas sobre as atrações do aquário, como exposições de espécies marinhas, shows educativos, túneis subaquáticos e atividades interativas, incentivando o interesse pela biodiversidade dos oceanos.Experiência Personalizada:Oferecer funcionalidades como escolha de horários, pacotes combinados (ex.: visita + alimentação de animais), e opções de memberships ou passes anuais, atendendo às preferências dos visitantes.Gestão de Fluxo de Visitantes:Controlar a capacidade do aquário por meio de reservas online, garantindo uma experiência confortável e segura para todos os visitantes.."
+      "descrição": " Venda de Ingressos Online:Permitir que os visitantes comprem ingressos de fnformações detalhadas sobre as atrações do aquário, como exposições de espécies marinhas, shows educativos, túneis subaquáticos e atividades interativas, incentivando o interesse pela biodiversidade dos oceanos.Experiência Personalizada:Oferecer funcionalidades como escolha de horários, pacotes combinados (ex.: visita + alimentação de animais), e opções de memberships ou passes anuais, atendendo às preferências dos visitantes.Gestão de Fluxo de Visitantes:Controlar a capacidade do aquário por meio de reservas online, garantindo uma experiência confortável e segura para todos os visitantes.."
+    },
+
+     {
+      "id": 3,
+      "titulo": "sobre nós",
+      "descrição": " Vesse pela biodiversidade dos oceanos.Experiência Personalizada:Oferecer funcionalidades como escolha de horários, pacotes combinados (ex.: visita + alimentação de animais), e opções de memberships ou passes anuais, atendendo às preferências dos visitantes.Gestão de Fluxo de Visitantes:Controlar a capacidade do aquário por meio de reservas online, garantindo uma experiência confortável e segura para todos os visitantes.."
+    }, 
+     {
+      "id": 4,
+      "titulo": "SDAASD",
+      "descrição": " Venda de Ingetalhadas so de espécies marinhas, shows educativos, túneis subaquáticos e atividades interativas, incentivando o interesse pela biodiversidade dos oceanos.Experiência Personalizada:Oferecer funcionalidades como escolha de horários, pacotes combinados (ex.: visita + alimentação de animais), e opções de memberships ou passes anuais, atendendo às preferências dos visitantes.Gestão de Fluxo de Visitantes:Controlar a capacidade do aquário por meio de reservas online, garantindo uma experiência confortável e segura para todos os visitantes.."
     }
+    
   ]
 }

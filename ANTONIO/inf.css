@@ -30,8 +30,9 @@ html {
 
 .nav-link:hover {
     background-color: #d36b04;
-    transition:0.5s;
+    transition: 0.5s;
 }
+
 /* ===== SEÇÃO HERO ===== */
 .hero-section {
     background: linear-gradient(135deg, #059669 0%, #047857 50%, #0f766e 100%);
@@ -69,24 +70,8 @@ html {
     border: 1px solid rgba(110, 231, 183, 0.3);
 }
 
-.etiqueta.verde {
-    background-color: #dcfce7;
-    color: #15803d;
-    border: 1px solid #bbf7d0;
-}
-
-.etiqueta.azul-claro {
-    background-color: #dbeafe;
-    color: #1d4ed8;
-    border: 1px solid #bfdbfe;
-}
-
 .espaco-direita {
     margin-right: 0.5rem;
-}
-
-.espaco-esquerda {
-    margin-left: 0.5rem;
 }
 
 .titulo-grande {
@@ -116,35 +101,24 @@ html {
     color: #dcfce7;
 }
 
-.texto-cinza {
-    color: #374151;
-}
-
-.texto-cinza-escuro {
-    color: #374151;
-}
-
-.titulo-escuro {
-    color: #111827;
-}
-
-/* ===== GRADE DE CARDS ===== */
-.grade-cards {
-    display: grid;
-    gap: 2rem;
+/* ===== CONTAINER DOS CARDS ===== */
+.container {
     max-width: 72rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 @media (min-width: 1024px) {
-    .grade-cards {
+    .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* ===== CARDS ===== */
-.cartao {
+/* ===== CARDS (MESMO ESTILO DOS 4 CARDS ANTIGOS) ===== */
+.card {
     border-radius: 0.5rem;
     overflow: hidden;
     transition: all 0.3s;
@@ -153,32 +127,14 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cartao:hover {
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.faixa-topo {
-    height: 0.5rem;
-}
 
-.faixa-topo.verde {
-    background: linear-gradient(to right, #10b981, #10b981);
-}
 
-.faixa-topo.azul {
-    background: linear-gradient(to right, #3b82f6, #06b6d4);
-}
-
-.faixa-topo.roxo {
-    background: linear-gradient(to right, #8b5cf6, #6366f1);
-}
-
-.faixa-topo.laranja {
-    background: linear-gradient(to right, #f97316, #eab308);
-}
-
-.cabecalho-cartao {
+.card-header {
     padding: 1.5rem 1.5rem 1rem 1.5rem;
 }
 
@@ -189,7 +145,8 @@ html {
     padding-bottom: 1rem;
 }
 
-.icone-cartao {
+/* Ícones dos cards */
+#card-1 .card-icone {
     width: 3rem;
     height: 3rem;
     border-radius: 0.75rem;
@@ -198,33 +155,92 @@ html {
     justify-content: center;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-.grupo:hover .icone-cartao {
-    transform: scale(1.1);
-}
-
-.icone-cartao.verde {
     background: linear-gradient(to bottom right, #10b981, #10b981);
 }
 
-.icone-cartao.azul {
+#card-2 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     background: linear-gradient(to bottom right, #3b82f6, #06b6d4);
 }
 
-.icone-cartao.roxo {
+/* Faixa colorida no topo - cores diferentes para cada card */
+#card-1 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #10b981, #10b981);
+}
+
+#card-2 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+}
+/* ===== NOVOS CARDS ADICIONADOS ===== */
+
+/* Card 3 - Roxo */
+#card-3 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #8b5cf6, #6366f1);
+}
+
+#card-3 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     background: linear-gradient(to bottom right, #8b5cf6, #6366f1);
 }
 
-.icone-cartao.laranja {
+/* Card 4 - Laranja */
+#card-4 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #f97316, #eab308);
+}
+
+#card-4 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     background: linear-gradient(to bottom right, #f97316, #eab308);
+}
+
+.card:hover .card-icone {
+    transform: scale(1.1);
 }
 
 .texto-branco {
     color: white;
 }
 
-.titulo-cartao {
+/* Badge dos cards */
+.card-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+/* Título do card */
+.card-titulo {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 1rem;
@@ -232,225 +248,18 @@ html {
     transition: color 0.3s ease;
 }
 
-.grupo:hover .titulo-cartao {
+.card:hover .card-titulo {
     color: #15803d;
 }
 
-.conteudo-cartao {
+/* Conteúdo do card */
+.card-content {
     padding: 1.5rem;
     padding-top: 0;
 }
 
-/* ===== SEÇÃO CONSERVAÇÃO ===== */
-.secao-conservacao {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #eff6ff 0%, #ecfdf5 100%);
-}
-
-.grade-duas-colunas {
-    display: grid;
-    gap: 3rem;
-    align-items: center;
-}
-
-@media (min-width: 1024px) {
-    .grade-duas-colunas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.titulo-medio {
-    font-size: 1.875rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.lista-espacada {
-    margin: 1.5rem 0;
-}
-
-.lista-espacada > * + * {
-    margin-top: 1rem;
-}
-
-.item-lista {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.icone-verde {
-    color: #059669;
-    flex-shrink: 0;
-}
-
-.texto-item {
-    font-weight: 500;
+.texto-cinza {
     color: #374151;
+    line-height: 1.625;
 }
 
-.botao-verde {
-    display: inline-flex;
-    align-items: center;
-    padding: 1rem 2rem;
-    border-radius: 9999px;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: all 0.3s;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, #059669, #047857);
-    color: white;
-    margin-top: 2rem;
-}
-
-.botao-verde:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    color: white;
-}
-
-.grupo-botao:hover .espaco-esquerda {
-    transform: translateX(0.25rem);
-}
-
-/* ===== CARTAO DE IMPACTO ===== */
-.cartao-impacto {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #dcfce7;
-    text-align: center;
-}
-
-.titulo-impacto {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #111827;
-    margin-bottom: 1.5rem;
-}
-
-.lista-impacto {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.lista-impacto > * + * {
-    margin-top: 1.5rem;
-}
-
-.item-impacto {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #f9fafb;
-    border-radius: 0.75rem;
-}
-
-.icone-impacto {
-    width: 3rem;
-    height: 3rem;
-    background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
-    border-radius: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icone-azul { color: #2563eb; }
-.icone-verde { color: #059669; }
-.icone-roxo { color: #9333ea; }
-.icone-esmeralda { color: #059669; }
-
-.numero-impacto {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.numero-impacto.azul { color: #2563eb; }
-.numero-impacto.verde { color: #059669; }
-.numero-impacto.roxo { color: #9333ea; }
-.numero-impacto.esmeralda { color: #059669; }
-
-.desc-impacto {
-    font-size: 0.875rem;
-    color: #4b5563;
-}
-
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
-    .grade-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .cabecalho-cartao {
-        padding: 1rem 1rem 0.5rem 1rem;
-    }
-    
-    .conteudo-cartao {
-        padding: 1rem;
-        padding-top: 0;
-    }
-    
-    .icone-cartao {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    
-    .titulo-cartao {
-        font-size: 1.125rem;
-    }
-    
-    .titulo-grande {
-        font-size: 2rem;
-    }
-    
-    .titulo-medio {
-        font-size: 1.5rem;
-    }
-    
-    .nav-lista {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav-item-simple {
-        margin: 5px 0;
-    }
-}
-.container {
-  max-width: 100px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%); /* Gradiente suave com tons de azul */
-  min-height: 100vh; /* Garante que o container ocupe a altura da tela */
-}
-
-/* Estilização dos cards */
-.card {
-  max-width: 500px; /* Reduzido para um layout mais compacto e moderno */
-  max-height: 500px;
-  min-width: none;
-  min-height: auto;
-  margin: 20px; /* Espaçamento maior entre os cards */
-  padding: 20px;
-  background: linear-gradient(145deg, #ffffff, #e6f0fa); /* Fundo claro com toque azulado */
-  border: none; /* Removido a borda preta para um visual mais limpo */
-  border-radius: 15px; /* Bordas mais arredondadas */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada e suave */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para hover */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden; /* Evita que o conteúdo vaze fora do card */
-}
-/* Efeito de hover nos cards */
-.card:hover {
-  transform: translateY(-10px); /* Eleva o card ao passar o mouse */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
-}
