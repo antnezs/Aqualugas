@@ -155,7 +155,7 @@ html {
     justify-content: center;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background: linear-gradient(to bottom right, #10b981, #10b981);
+    background: linear-gradient(to bottom right, #000000, #00ffea);
 }
 
 #card-2 .card-icone {
@@ -173,7 +173,7 @@ html {
 /* Faixa colorida no topo - cores diferentes para cada card */
 #card-1 .card-topo {
     height: 0.5rem;
-    background: linear-gradient(to right, #10b981, #10b981);
+    background: linear-gradient(to right, #000000, #00ffea);
 }
 
 #card-2 .card-topo {
@@ -185,7 +185,7 @@ html {
 /* Card 3 - Roxo */
 #card-3 .card-topo {
     height: 0.5rem;
-    background: linear-gradient(to right, #8b5cf6, #6366f1);
+    background: linear-gradient(to right, #3a1397, #b30aeb);
 }
 
 #card-3 .card-icone {
@@ -197,7 +197,7 @@ html {
     justify-content: center;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background: linear-gradient(to bottom right, #8b5cf6, #6366f1);
+    background: linear-gradient(to bottom right, #3a1397, #b30aeb);
 }
 
 /* Card 4 - Laranja */
@@ -217,6 +217,72 @@ html {
     transition: transform 0.3s ease;
     background: linear-gradient(to bottom right, #f97316, #eab308);
 }
+
+#card-5 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right,#1a6503, #08f720);
+}
+
+#card-5 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #1a6503, #08f720);
+}
+
+#card-6 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #1244f7, #01dee2);
+}
+
+#card-6 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right,  #1244f7, #01dee2);
+}
+#card-7 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #7c0909, #ea0808);
+}
+#card-7 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right,  #7c0909, #ea0808);
+}
+#card-8 .card-topo {
+    height: 0.5rem;
+    background: linear-gradient(to right, #c816f9, #189bed);
+}
+#card-8 .card-icone {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, #c816f9, #189bed);
+}
+
+
 
 .card:hover .card-icone {
     transform: scale(1.1);
